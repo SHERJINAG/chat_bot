@@ -21,7 +21,6 @@ body {
 }
 
 /* Chat Header */
-/* Chat Header */
 .chat-header {
     background-color: #00A67E;
     color: #fff;
@@ -59,7 +58,6 @@ body {
     text-align: center;
 }
 
-
 /* Chat Box */
 .chat-box {
     background-color: #fff;
@@ -73,7 +71,7 @@ body {
     padding: 10px;
     min-height: 300px;
     max-height: 400px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .chat-message {
@@ -138,5 +136,39 @@ button:hover {
 
     input[type="text"] {
         font-size: 14px;
+    }
+
+    .chat-message {
+        font-size: 14px;
+    }
+
+    .chat-header h1 {
+        font-size: 20px;
+    }
+}
+
+/* Additional Mobile Adjustments */
+@media only screen and (max-width: 400px) {
+    .chat-header img {
+        height: 30px;
+    }
+
+    .chat-header h1 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    input[type="text"] {
+        font-size: 12px;
+    }
+
+    .chat-body {
+        padding: 5px;
+        min-height: 200px;
+        max-height: 300px;
     }
 }
